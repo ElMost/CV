@@ -1,0 +1,229 @@
+aside
+{
+    width: 35%;
+    background-color: #FFC107;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+footer 
+{
+    position: absolute;
+    bottom: 3em;
+    left: 0px;
+    right: 0px;
+}
+body
+{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif, 'Roboto';
+}
+img.displayed
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    height: 12em;
+    border-radius: 12em;
+    padding: 0.4em;
+}
+#contact
+{
+    text-align: center;
+    background-color: #37474F; 
+    color:  #FFC107;
+    padding: 5px;
+    font-size: 1.5em;
+}
+.coor
+{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 15px;
+
+}
+
+#Apropos
+{
+    text-align: center;
+    background-color: #37474F;
+    margin-top: 2em;
+    color:  #FFC107;
+    font-size: 1.5em;
+    padding: 5px;
+
+}
+.moi
+{
+    padding: 20px;
+    text-align: justify;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 15px;
+
+}
+
+#Loisirs
+{
+    text-align: center;
+    background-color: #37474F;
+    padding: 5px;
+    color:  #FFC107;
+    font-size: 1.5em;
+    position: relative; bottom: unset;
+    margin-bottom: 1em;
+    bottom: 0px;
+}
+.fa-swimmer, .fa-running,.fa-laptop-code
+{
+    font-size: 200%;
+    border: 2px solid #37474F;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+}
+main
+{
+    width: 100%;
+    padding-right: 7em;
+    padding-left: 2.5em;
+   
+}
+header
+{
+    padding-top: 4%;
+    padding-bottom: 7%;
+}
+#experiences
+{
+    text-decoration-line: underline;
+    padding-right: 15px;
+}
+container
+{
+    
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+      
+}
+
+h1
+{
+    font-size: 60px;
+    margin-bottom: 0px;
+
+}
+#prenom
+{
+    color:#FFC107;
+}
+.flex
+{
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    padding-top: 10px;
+    width: 100%;
+    margin-right: 6em;
+    margin-top: 5PX;
+}
+main h3
+{
+    border-bottom: 2px solid #FFC107;
+    padding-bottom: 10px;
+}
+
+.fa-dot-circle:before {
+    content: "\f192";
+    color: #FFC107;
+    font-size: 15px;
+    padding-right: 1.5em;
+    padding-top: 7px;
+}
+.fa-dot-circle
+{
+    padding-top: 4px;
+}
+.fa-circle
+{
+    content: "\f192";
+    color: #FFC107;
+    padding-right: 2.5em;
+    font-size: 8px; 
+    padding-top: 7px;
+    padding-left: 3px;
+}
+.fa-pencil-alt,.fa-graduation-cap, .fa-briefcase
+{
+    margin-right: 20px;
+    color: #FFC107;
+}
+h2
+{
+    margin-top: 0px;
+    
+}
+h3
+{
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    margin-top: 1em;
+}
+
+.date
+{
+    width: 100%;
+}
+h4
+{
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.Loisir
+{
+    display: flex ;
+    justify-content: center ;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#RECOMMANDATIONS
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+h5
+{
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h6
+{
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+#ligne
+{
+    border-bottom: 2px solid #FFC107;
+}
+.alignement
+{
+    display: inline-flex;
+}
