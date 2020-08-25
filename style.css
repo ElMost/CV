@@ -96,9 +96,8 @@ img.displayed
 main
 {
     width: 100%;
-    padding-right: 7em;
-    padding-left: 2.5em;
-   
+    padding-right: 2.5em;
+    padding-left: 2.5em;   
 }
 header
 {
@@ -106,20 +105,17 @@ header
     padding-bottom: 7%;
 }
 
-container
-{
-    
+body
+{    
         display: flex;
         flex-direction: row;
-        margin: 0px;
-      
+        margin: 0px;      
 }
 
 h1
 {
     font-size: 60px;
     margin-bottom: 0px;
-
 }
 #prenom
 {
@@ -224,43 +220,88 @@ p{
 {
     display: inline-flex;
 }
-#ecart
-{
-    padding-left: 20px;
-}
 @media all and (max-width: 991.98px) 
 {
-    #bloc_page
-    {
-        width: max-content;
-    }
-    container, section, .flex
+   
+    body, section, .flex, #RECOMMANDATIONS
     {
         flex-direction: column;
     }
 
-     container, aside, main
+     body,aside, main
     {
         width: fit-content;
         margin-bottom: 15px;
+        
     }
-    aside  p:last-child
+    aside p:last-child
     {
-        text-align: justify;
+        text-align: justify;        
     }
+    aside
+    {
+        margin-right: -5em;
+        padding-bottom: 2em;
+    }
+    
     main h4
     {
         margin-top: 15px;
     }
+   
+    #infos,.flex,#RECOMMANDATIONS  
+    {
+        width: 50%;
+        margin: auto;
+    }
+    .flex
+    {
+        margin-top: 30px;
+    }
+   
+    .date
+    {
+        width: 17em;
+        
+    }
+   
     #bas
     {
         display: contents;
-        bottom: 2em;
-        left: 0px;
-        right: 0px;
+        bottom: 1.5em;
     }
-    h1
+    main
     {
-        width: max-content;
+        width: 100%;
+    }
+    section
+    {
+        font-size: 2em;
+    }   
+    h1, h2, h3
+    {
+        text-align: center;
+        margin-top: 1em;
+    }
+    h2
+    {
+        font-size: 1.5em;
+        margin-top: auto;
+    }    
+    h4
+    {
+        font-size: 1.1em;
+    }
+    strong
+    {
+        display: inline-flex;
+    }
+    .fa-bowling-ball, .fa-futbol, .fa-table-tennis, h2
+    {
+        font-size: 2em;
+    }
+    header
+    {
+        padding:0px;
     }
 }
