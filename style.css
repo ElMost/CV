@@ -1,18 +1,18 @@
 html, body
 {
-    width: 100%;
-    height: 100%;
-    font-family: 'Open Sans', sans-serif, 'Roboto';
     height: auto;
-    font-size: 1em;
+    font-family: 'Open Sans', sans-serif, 'Roboto';
+    font-size: 1.1em;
     margin: 0px;
     display: flex;
+    position: relative;
+    min-width: fit-content;
 }
 aside
 {
-    width: 30%;
+    width: 450px;
+    height: auto;
     background-color: #FFC107;
-    padding-top: 2.5em;    
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -23,23 +23,23 @@ img.displayed
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3.5em;
     width: 13em;
     height: 13em;
-    border-radius: 13em;
-    padding: 0.4em;
+    border-radius: 50%;
+    padding: 0.7em;
 }
 #infos
-{
-   
-    width: auto;
+{   
+    width: 350px;
+    margin: auto;
 }
 .coor
 {
     width: 250PX;
     height: auto;
     margin-top: 10PX;
-    margin-left: 25px;
-    margin-right: 25px;
+    
 }
 #contact, #Apropos, #Loisirs
 {
@@ -53,9 +53,9 @@ img.displayed
 #moi
 {
     text-align: justify;
-    width: 250PX;
+    width: 350px;
     height: auto;
-    MARGIN: 25PX;
+    MARGIN: auto
 }
 .fa-bowling-ball, .fa-futbol, .fa-table-tennis
 {
@@ -69,27 +69,26 @@ img.displayed
 .Loisir
 {
     display: flex;
-    justify-content: center;
-    justify-content: space-around;    
+    justify-content:space-around;
 }
 #bas
 {
     position: absolute;
-    bottom: 2em;
+    bottom:1em;
     left: 0px;
     right: 0px;
 }
 main
 {
-    width: 100%;
     height: auto;
     padding-right: 5.5em;
-    padding-left: 5.5em;   
+    padding-left: 5.5em;
+    width: 66%;  
 }
 header
 {
-    padding-top: 5%;
-    padding-bottom: 7%;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 h1
 {
@@ -115,14 +114,15 @@ h2
     flex-direction: row;
     justify-items: space-between;
     padding: 15px;
-    width: 100%;
-    margin-right: 6em;
+    width: auto;
+    margin-right: 5em;
     margin-top: 5PX;
 }
 main h3
 {
     border-bottom: 2px solid #FFC107;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
     font-size: 1.7em;
 }
 
@@ -135,7 +135,6 @@ main h3
     color: #FFC107;
     font-size: 15px;
 }
-
 .fa-circle
 {
     content: "\f192";
@@ -150,7 +149,6 @@ main h3
     margin-right: 30px;
     color: #FFC107;
 }
-
 h3
 {
     font-size: 1.5em;
@@ -160,6 +158,10 @@ h3
 .date
 {
     width: 350px;
+}
+.exp
+{
+    width: 700px;
 }
 h4
 {
@@ -203,7 +205,6 @@ p
 {   
     html
     {
-        font-size: 2em;
         width: fit-content;
     }
     body, aside, main, .flex
@@ -215,20 +216,23 @@ p
     }
     header
     {
-        padding: 0px;
+        padding: 20px;
     }
     aside p section:last-child
     {
         text-align: justify;        
-    }    
+    }
+    main h3
+    {
+        margin: auto;
+    } 
     main h4
     {
         margin-top: 15px;
     }
     #infos
     {
-        margin: auto;
-        width: auto;
+        margin-left: 40%;
     }   
     #bas
     {
@@ -248,37 +252,42 @@ p
     }
     .flex
     {
-        margin: auto;
-        flex: none;
         padding: 20px;
+        margin-left: 15%;
+        width: 650px;
     }
     .date
     {
         margin: auto;
-        width: 750px;
-        margin-left: 10%;
+        width: 400px;
     }
-    h4,h5, p
+    .exp
     {
-        margin-left: 9%;
+        width: 500px;
+        margin-left: 29.5%;
+    }
+    h4, h5, p
+    {
+        width: 450px
     }
     #RECOMMANDATIONS
     {
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        width: 500px;
         margin: auto;
     }
     .rec
     {
-        width: 700px;
-        margin-left: 7%;
+        width: 400px;
+        margin: auto;
         padding: 20px;
+        margin-left: 20%;
     }
     h1, h2, h3
     {
         text-align: center;
-        margin-top: 0.5em;
+        margin-top: 0.7em;
         width: 991px;
     }
     h1
@@ -306,27 +315,29 @@ p
     .fa-bowling-ball, .fa-futbol, .fa-table-tennis
     {
         font-size: 2em;
+    }
+    .fa-bowling-ball
+    {
+        margin-left: 250px;
+    }
+    .fa-table-tennis
+    {
+        margin-right: 250px;
     }  
     .coor
     {
-        margin-left: auto;
-        width: 400PX;
-        margin-right: auto;
+        
         margin-top: 30px;
     } 
     .fa-dot-circle
     {
         width: 60px;
-        
         font-size: 25px;
     }
     .fa-circle
-    {
-
-        
-        font-size: 20px; 
-        
+    {   
         width: 60px;
+        font-size: 20px; 
     }
 
 }
