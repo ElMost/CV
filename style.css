@@ -1,38 +1,39 @@
-#page
-{
-    width: auto;
-}
 html
 {
-    height: auto;
     font-family: 'Open Sans', sans-serif, 'Roboto';
-    font-size: 0.9em;
     display: flex;
     position: relative;
-    width: 90em;
+    font-size: 1em;
+
 }
 body
 {
+    width :100% ;
     margin: 0px;
+}
+#container
+{
     display: flex;
-    position: relative;
-    width: auto;
+    width: 100%;  
 }
 aside
 {
-    width: 24em;
-    height: auto;
+    width: 28%;
     background-color: #FFC107;
     margin: 0px;
     display: flex;
     flex-direction: column;
     position: relative;
+    text-align: center;
+}
+main
+{
+    padding-right: 3.5em;
+    padding-left: 3.5em;
+    width: 72%;
 }
 img.displayed
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 3.5em;
     width: 13em;
     height: 13em;
@@ -41,19 +42,12 @@ img.displayed
 }
 #infos
 {   
-    width: 17em;
-    margin: auto;
-}
-.coor
-{
-    width: 250PX;
-    height: auto;
-    margin-top: 10PX;
-    
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: justify;
 }
 #contact, #Apropos, #Loisirs
 {
-    text-align: center;
     background-color: #37474F; 
     color:  #FFC107;
     padding: 5px;
@@ -63,25 +57,20 @@ img.displayed
 #moi
 {
     text-align: justify;
-    width: 17em;
-    height: auto;
-    MARGIN: auto
+    width: 80%;
+    margin: auto;
 }
 .fa-bowling-ball, .fa-futbol, .fa-table-tennis
 {
-    font-size: 35px;
-    border: 2px solid #37474F;
+    font-size: 2em;
+    border: 1px solid #37474F;
     width: 1em;
     height: 1em;
-    padding: 10PX;
+    padding: 12PX;
     border-radius: 50%;
+    margin: 10px;
 }
-.Loisir
-{
-    display: flex;
-    justify-content:space-around;
-    margin-bottom: 1em;
-}
+
 #bas
 {
     position: absolute;
@@ -89,21 +78,14 @@ img.displayed
     left: 0px;
     right: 0px;
 }
-main
-{
-    height: auto;
-    padding-right: 4em;
-    padding-left: 4em;
-    width: 58em;  
-}
 header
 {
-    padding-top: 2em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 h1
 {
-    font-size: 4.5em;
+    font-size: 3.5em;
     margin-bottom: 5px;
 }
 #prenom
@@ -112,7 +94,7 @@ h1
 }
 h2
 {
-    font-size: 2.3em;
+    font-size: 1.7em;
     margin-top: 0px;    
 }
 #ligne
@@ -121,14 +103,10 @@ h2
 }
 .flex
 {
-    height: 55%;
     display: flex;
     flex-direction: row;
-    justify-items: space-between;
-    padding: 15px;
-    width: auto;
-    margin-right: 5em;
-    margin-top: 5PX;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 main h3
 {
@@ -138,21 +116,20 @@ main h3
     font-size: 1.7em;
     margin-top: 40px;
 }
-
-
 .fa-dot-circle
 {
+    
     padding-top: 4px;
     width: 30px;
     content: "\f192";
     color: #FFC107;
-    font-size: 15px;
+    font-size: 1em;
 }
 .fa-circle
 {
     content: "\f192";
     color: #FFC107;
-    font-size: 10px; 
+    font-size: 0.5em; 
     padding-top: 7px;
     padding-left: 3px;
     width: 30px;
@@ -170,11 +147,15 @@ h3
 }
 .date
 {
-    width: 400px;
+    width: 45%;
 }
 .exp
 {
-    width: 700px;
+    width: 70%;
+}
+.alignement
+{
+    display: inline-flex;
 }
 h4
 {
@@ -207,147 +188,160 @@ p
     margin-bottom: 0px;
     padding: 0px;
 }
-.alignement
-{
-    display: inline-flex;
-}
 .rec
 {
-    width: 700px;
+    width: 50%;
 }
-@media all and (max-width: 991.98px) 
-{   
+
+
+/*FORMAT TABLETTE*/
+@media all and (max-width: 991.98px)
+
+{ 
     html
     {
-        width: fit-content;
-        font-size: 1.3em;
+        font-size: 20px;
     }
-    body, aside, main, .flex
+    
+    #container
     {
-        display: flex;
         flex-direction: column;
-        width: fit-content;
-        height: auto;
+        width: 100%;
+    }
+    aside
+    {
+        width: 100%;
+    }
+    main
+    {
+        margin: auto;
+        padding: 0px;
+        width: 80%;
     }
     header
     {
-        padding: 20px;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
-    aside p section:last-child
-    {
-        text-align: justify;        
-    }
-    main h4
-    {
-        margin-top: 15px;
-    }
-    #infos
-    {
-        margin-left: 40%;
-    }   
-    #bas
-    {
-        display: contents;
-        bottom: 1.5em;
-    }
-    aside, main
-    {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
+    
     .flex
     {
-        padding: 20px;
-        margin-left: 22%;
-        width: 650px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 30%;
+        
     }
     .date
     {
-        margin: auto;
-        width: 600px;
+        width: 100%;
     }
-    .exp
+    
+    #bas
     {
-        width: 500px;
-        margin-left: 14%;
-    }
-    h4, h5, p
-    {
-        width: 450px
+        display: contents;
+        bottom: 1em;
     }
     #RECOMMANDATIONS
     {
         display: flex;
         flex-direction: column;
-        width: 500px;
         margin: auto;
-        margin-left: 28%;
+        margin-left: 19%;
 
     }
     .rec
     {
-        width: 400px;
         margin: auto;
-        padding: 15px;
-    }
-    h1, h2, h3
-    {
-        text-align: center;
-        margin-top: 0.7em;
-        width: 991px;
+        width: 350px;
     }
     h1
     {
-        font-size: 4em;
+        font-size: 2em;
+        text-align: center;
     }
     h2
     {
-        font-size: 2em;
+        font-size: 1.2em;
         margin-top: auto;
-    }    
+        text-align: center;
+    } 
+    main h3
+    {
+        text-align: center;
+        font-size: 1.1em;
+    }  
     h4
     {
-        font-size: 1.1em;
+        font-size: 1em;
     }
-    .soustitre 
-    {
-        margin-top: 0px;
-    }   
     #moi
     {
         margin: AUTO;
-        width: 800px;
         margin-bottom: 30PX;
     }
-    .fa-bowling-ball, .fa-futbol, .fa-table-tennis
-    {
-        font-size: 3em;
-        padding: 0.3EM;
-    }
+    
     .fa-bowling-ball
     {
-        margin-left: 250px;
+        margin-left: 25px;
     }
     .fa-table-tennis
     {
-        margin-right: 250px;
-    }  
-    .coor
+        margin-right: 25px;
+    }     
+    .alignement
     {
-        
-        margin-top: 15px;
-    } 
-    .fa-dot-circle
-    {
-        width: 60px;
-        font-size: 25px;
+        display: inline-flex;
     }
-    .fa-circle
-    {   
-        width: 60px;
-        font-size: 20px; 
+    .exp
+    {
+        width: 100%;
+        margin: AUTO;
+    } 
+    #infos
+    {
+        text-align: center;
+    }
+}
+@media (max-width: 640px)
+{
+    html
+    {
+        font-size: 13px;
+    }
+    .date
+    {
+        align-self: start;
+        width: 100%;
+        margin-top: 5%;
+    }
+    .flex
+    {
+        margin-left: 0px;
+    }
+    #RECOMMANDATIONS
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+        margin-left: 0%;
+
+    }
+    .rec
+    {
+        margin: 1px;
+        padding: 0px;
+        width: auto;
+    }
+    .exp
+    {
+        width: 280px;
+        margin-bottom: 5%;
     }
 
+
 }
+
+
+/*FORMAT TELEPHONE*/
+
