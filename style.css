@@ -18,7 +18,7 @@ body
 }
 aside
 {
-    width: 33%;
+    width: 30%;
     background-color: #FFC107;
     margin: 0px;
     display: flex;
@@ -44,7 +44,7 @@ img.displayed
 {   
     margin: auto;
     text-align: justify;
-    width: 85%;
+    width: 80%;
 }
 #contact, #Apropos, #Loisirs
 {
@@ -57,7 +57,7 @@ img.displayed
 #moi
 {
     text-align: justify;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 .fa-bowling-ball, .fa-futbol, .fa-table-tennis
@@ -136,7 +136,7 @@ main h3
 }
 .fa-pencil-alt,.fa-graduation-cap, .fa-briefcase
 {
-    margin-right: 30px;
+    margin-right: 12PX;
     color: #FFC107;
 }
 h3
